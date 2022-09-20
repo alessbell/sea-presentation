@@ -4,8 +4,17 @@
   "description": "a presentation about tech and life!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build --no-html deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Alessia Bellisario <github@bellisar.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^1.8.2",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^1.0.0"
+  }
 }
