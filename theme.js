@@ -1,17 +1,17 @@
-import { hack as theme } from 'mdx-deck/themes';
-import nightOwl from 'prism-react-renderer/themes/nightOwl';
+import React from 'react'
+import theme, { Provider, GithubIcon } from 'mdx-deck-theme-garlic'
+
+const config = {
+  // eslint-disable-next-line react/display-name
+  logo: () => <GithubIcon />,
+  logoUrl: 'https://github.com/alessbell/sea-presentation',
+  author: 'aless.co/sea-slides',
+  authorUrl: 'https://aless.co/sea-slides',
+}
+
+const wrapper = props => <Provider {...props} {...config} />
 
 export default {
   ...theme,
-  codeSurfer: {
-    ...nightOwl,
-    showNumbers: false,
-  },
-  li: {
-    margin: '2rem',
-  },
-};
-
-// Read the docs for more info:
-// https://github.com/jxnblk/mdx-deck/blob/master/docs/theming.md
-// https://github.com/jxnblk/mdx-deck/blob/master/docs/themes.md
+  Provider: wrapper,
+}
