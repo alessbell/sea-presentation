@@ -11,7 +11,7 @@
   "author": "Alessia Bellisario <github@bellisar.io>",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "3.0.9",
+    "mdx-deck": "3.1.0",
     "mdx-deck-theme-garlic": "0.3.5"
   }
 }
