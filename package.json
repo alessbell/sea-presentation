@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build --no-html deck.mdx",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider mdx-deck build --no-html deck.mdx",
     "help": "mdx-deck"
   },
   "author": "Alessia Bellisario <github@bellisar.io>",
